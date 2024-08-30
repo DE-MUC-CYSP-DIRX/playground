@@ -1,0 +1,52 @@
+This chapter describes how to install and un-install DirX Identity.
+
+== Installation
+
+This section describes how to run the DirX Identity installation procedure to install the DirX Identity software on a machine.
+
+=== General Remarks
+
+[%hardbreaks]
+For each successful installation / un-installation, a record is written to the file
+_install_path/install_history.txt_
+providing information about
+
+* Date of installation / un-installation
+* DirX Identity version
+* Name of user performing the installation / un-installation
+* Installed components
+
+For each successful installation, there is a related installation log file __install_path/__**DirX_Identity**___version___**Install**___timestamp__.**log**.
+
+For each successful uninstallation, there is a related uninstallation log file __install_path/__**DirX_Identity**___version___**Uninstall**___timestamp__.**log**.
+
+==== Windows Instructions:
+
+To install, configure and run DirX Identity or any of its patches, consider the following issues resulting from the User Access Control (UAC) functionality introduced with these operating system versions. With UAC, Microsoft introduced a technique to "elevate" a user "on flow" from a standard to an administrative user by letting a standard user "explicitly confirm" when trying to perform an administrative task, like writing to the registry, creating, editing or deleting files and so on. UAC is active by default to prevent the system from unauthorized user manipulation.
+
+Because this explicit confirmation cannot be done at any time during Installation and Configuration, you must:
+
+* Put the logged in user account to the Local Administrators (Windows Client) - or the Administrators (Windows Server) group
+* Disable UAC during Installation and Configuration and turn it on again afterwards if you want to.
+
+Another issue besides UAC to be considered is the access rights required on the installation folder and subfolders. You no longer automatically need to have the read, write and create files rights on each installation subfolder even if you are a member of the Administrators group. To get these rights, you can:
+
+* Install DirX Identity under a different path (for example, C:\My_Program Files\...) from the default path (C:\Program Files\...), or
+
+* Take the default path and explicitly set those rights on the subfolders (Properties -> Security -> Permissions) for the logged-in user where configuration files need to be edited or temporary files or log files need to be created, or
+* Always open a DOS command prompt with administrative rights if you want to edit or delete a file in a specific subfolder.
+
+==== Linux Instructions:
+
+The login name of a Linux user determines the destination folder for installation. The folder is userID_home_directory/DirX_Identity, where userID_home_directory is the home directory of the specified account. For the DirX Identity package you can use any account which is different from the account that is used for DirX Directory Server. The user ID must exist before you perform the installation procedure.
+
+A graphical and a command-line based (console mode is default) installation procedure is available.
+
+The following description shows the graphical installation procedure. The screenshots are taken on Windows XP. The look on Linux is slightly different.
+
+During the graphical installation mode, you can click Cancel at any time to leave the installation program. You can click Previous at any time to return to a previous dialog.
+
+Console mode mimics the default GUI steps provided by InstallAnywhere and uses standard input and output. X-Windows (X11) is not necessary to run the DirX Identity installation in console mode. Console mode outputs text to the console line-by-line. It does not allow for any formatting, clearing of the screen, or positioning of the cursor. The console mode information is almost identical to the graphical display. Thus, it is not listed in this manual.
+
+During this mode, you must respond to each prompt to proceed to the next step in the installation. If you want to go back to a previous step, type 'back'. You may cancel the console installation at any time by typing 'quit'.
+
