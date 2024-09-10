@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Using Request Workflows :: DirX Docs Test with Antora</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">DirX Docs Test with Antora</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dirx-antora-test" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">dirx-antora-test</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Overview</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Start</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">DirX Identity</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="DirX-Identity-V8.10-SP2_497680389.html">DirX Identity V8.10 SP2</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Documentation_501940226.html">Documentation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Introduction_501022729.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Challenge_502300686.html">Challenge</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Overview_501350431.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Glossary_501678118.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Tutorial_501842013.html">Tutorial</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Getting-Started_502267994.html">Getting Started</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Tutorials_502005954.html">Tutorials</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Sample-Domain_503283770.html">Sample Domain</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Provisioning-Administration-Guide_504201235.html">Provisioning Administration Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Managing-the-Provisioning-System_504463382.html">Managing the Provisioning System</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Planning-Checklist_504660043.html">Planning Checklist</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="User-Management_506724354.html">User Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Application Development Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1_applsref.html#understanding_the_default_application_workflow_technology">Understanding the Default Application Workflow Technology</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1_applsref.html#understanding_request_workflows">Understanding Request Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1_applsref.html#understanding_java_based_workflows">Understanding Java-based Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1_applsref.html#understanding_tcl_based_workflows">Understanding Tcl-based Workflows</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#using_request_workflows">Using Request Workflows</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#understanding_creation_workflows">Understanding Creation Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#understanding_modification_workflows">Understanding Modification Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#understanding_assignment_workflows">Understanding Assignment Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#understanding_deletion_workflows">Understanding Deletion Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#understanding_certification_workflows">Understanding Certification Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#understanding_service_management_workflows">Understanding Service Management Workflows</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ch3_configScen.html#configuring_custom_scenarios">Configuring Custom Scenarios</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">dirx-antora-test</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">dirx-antora-test</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">dirx-antora-test</a></li>
+    <li>Application Development Guide</li>
+    <li><a href="#using_request_workflows">Using Request Workflows</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="https://github.com/DE-MUC-CYSP-DIRX/playground.wiki/edit/master/docs/modules/dxi/pages/ch2_reqWFs.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Using Request Workflows</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can use request workflows for a variety of tasks, including:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Creating objects (user self registration, users, roles, and so on with or without approval)</p>
+</li>
+<li>
+<p>Modifying objects (users, roles, and so on) and approving object attribute changes</p>
+</li>
+<li>
+<p>Approving privilege assignment changes</p>
+</li>
+<li>
+<p>Deleting objects (users, roles, and so on)</p>
+</li>
+<li>
+<p>Performing certifications</p>
+</li>
+<li>
+<p>Performing service management tasks</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="understanding_creation_workflows"><a class="anchor" href="#understanding_creation_workflows"></a>Understanding Creation Workflows</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Creation workflows allow you to place controls on the object creation process.Let&#8217;s look at several typical examples:</p>
+</div>
+<div class="paragraph">
+<p><strong>User Self Registration Workflows</strong> - the <strong>Customer Self Registration</strong> workflow allows for self registration of a customer</p>
+</div>
+<div class="paragraph">
+<p><strong>Create User Workflows</strong> - the <strong>Create User With Approval</strong> workflow shows how an administrator enters a new user with approval.</p>
+</div>
+<div class="paragraph">
+<p><strong>Create Persona Workflows</strong> - the <strong>Create Persona from User</strong> shows a typical workflow for administrative persona creation.</p>
+</div>
+<div class="paragraph">
+<p><strong>Create User Facet Workflows</strong> - the <strong>Create</strong> <strong>User Facet from User</strong> shows a typical workflow for creating a user facet.</p>
+</div>
+<div class="paragraph">
+<p><strong>Create Functional User Workflows</strong> - the <strong>Create Functional User from User</strong> shows a typical workflow for administrative functional user creation.</p>
+</div>
+<div class="paragraph">
+<p><strong>Create Privilege Workflows</strong> - the <strong>Create Role</strong> workflow defines a process for role creation.</p>
+</div>
+<div class="paragraph">
+<p>These examples of creation workflows show that you can build various types of creation workflows that satisfy your organizational and process requirements. We recommend that you streamline your processes when defining request workflows so that they are fast and flexible but still maintain regulatory compliance.</p>
+</div>
+<div class="sect2">
+<h3 id="_user_self_registration_workflows"><a class="anchor" href="#_user_self_registration_workflows"></a>User Self Registration Workflows</h3>
+<div class="paragraph">
+<p>Self registration workflows have a special function: they are triggered by a user that is not yet registered within DirX Identity. To handle this case, DirX Identity uses the special and reserved user ANYONE, which has the limited access rights defined by access policies that are sufficient to perform the self registration process. See the access policies for ANYONE under <strong>Policies</strong> &#8594; <strong>Access Policies</strong> &#8594; <strong>Default &#8594;</strong> <strong>Request Workflow Definitions</strong> for more information. You need to supply a password for ANYONE in the file <em>install_path</em>*\web\webCenter\WEB-INF* to enable the self registration process.</p>
+</div>
+<div class="paragraph">
+<p>A typical self registration workflow is the Customer Self Registration workflow:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch2_reqWFs/image1.gif" alt="Customer Self Registration Workflow">
+</div>
+<div class="title">Figure 1. Customer Self Registration Workflow</div>
+</div>
+<div class="paragraph">
+<p>The Customer Self Registration workflow contains the following activities</p>
+</div>
+<div class="paragraph">
+<p><strong>Enter Attributes</strong> (people) - displays a set of attributes (mandatory or optional) that the requesting user must supply.</p>
+</div>
+<div class="paragraph">
+<p><strong>Enter Password</strong> (people) - requests a password that complies with the defined password policies from the user.</p>
+</div>
+<div class="paragraph">
+<p><strong>Request Services</strong> (people) - allows the user to select some of the offered services. The policy execution service can assign additional privileges automatically later on.</p>
+</div>
+<div class="paragraph">
+<p><strong>Confirm Data</strong> (people) - presents all entered data to the user, who can change the data if it is not correct and then either confirm or abort the entire self registration process.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if Aborted</strong> (automatic) - sends a final notification to the requesting user that he aborted the self registration process.</p>
+</div>
+<div class="paragraph">
+<p><strong>Set Constants</strong> (automatic) - sets some constant values, for example, the user type to "Customer" and the master attribute to "Self Registration".</p>
+</div>
+<div class="paragraph">
+<p><strong>Approve Self Registration</strong> (people) - requires a set of persons (the participants) to approve this user self registration request. In this case, a fixed group of people defines the list of approvers.</p>
+</div>
+<div class="paragraph">
+<p><strong>Apply Change</strong> (automatic) - creates the LDAP entry for the user if the participants in <strong>Approve</strong> <strong>Creation</strong> accept the creation request. Up to this point, the user entry does not exist. It exists only as an order object within the workflow instance. Creating the user LDAP entry includes a privilege resolution and generation of events for real-time workflows.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if Rejected</strong> (automatic) - typically sends an e-mail notification to the initiator of this workflow if the participants reject the user creation request.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if EXPIRED (automatic)</strong> - sends an e-mail to an administrator that the workflow has expired. Obviously the participants did not react in time.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_user_workflows"><a class="anchor" href="#_create_user_workflows"></a>Create User Workflows</h3>
+<div class="paragraph">
+<p>You can create users in various ways. The following figure shows a typical workflow for administrative user creation:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch2_reqWFs/image2.gif" alt="Example of a Create User Workflow">
+</div>
+<div class="title">Figure 2. Example of a Create User Workflow</div>
+</div>
+<div class="paragraph">
+<p>The workflow shown in the figure contains the following activities:</p>
+</div>
+<div class="paragraph">
+<p><strong>Enter Attributes</strong> (people) - displays a set of attributes (mandatory or optional) that the administrator must supply.</p>
+</div>
+<div class="paragraph">
+<p><strong>Request Privileges</strong> (people) - allows the administrator to assign some privileges by hand. The policy execution service can assign additional privileges automatically later on.</p>
+</div>
+<div class="paragraph">
+<p><strong>Approve Creation</strong> (people) - requires a set of persons (the participants) to approve this administrative request for user creation. There are many ways to define the participants; for example, fixed lists, the members of groups, an LDAP filter definition and so on. For this workflow, a fixed list of approvers that are part of the human resources department is configured.</p>
+</div>
+<div class="paragraph">
+<p><strong>Calculate GUID (automatic)</strong> - calculates a standard global unique identifier. Example: uid-c0a8e480&#8212;&#8203;4b5b380c-121222f6f42&#8212;&#8203;7fb8. You can create your own UID generator as a custom activity.</p>
+</div>
+<div class="paragraph">
+<p><strong>Apply Change</strong> (automatic) - creates the LDAP entry for the user if the participants in <strong>Approve</strong> <strong>Creation</strong> accept the creation request. Up to this point, the user entry does not exist. It exists only as an order object within the workflow instance. Creating the user LDAP entry includes a privilege resolution and generation of events for real-time workflows.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if Rejected</strong> (automatic) - typically sends an e-mail notification to the initiator of this workflow if the participants reject the user creation request.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if EXPIRED (automatic)</strong> - sends an e-mail to an administrator that the workflow has expired (the participants did not respond in time).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_persona_workflows"><a class="anchor" href="#_create_persona_workflows"></a>Create Persona Workflows</h3>
+<div class="paragraph">
+<p>You can create personas in various ways. The following figure shows a typical workflow for administrative persona creation:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch2_reqWFs/image3.gif" alt="Example of a Create Persona Workflow">
+</div>
+<div class="title">Figure 3. Example of a Create Persona Workflow</div>
+</div>
+<div class="paragraph">
+<p>The workflow shown in the figure is derived from the corresponding create user workflow, which has been extended to include a new first activity:</p>
+</div>
+<div class="paragraph">
+<p><strong>Persona from User</strong> (automatic) - creates the default values for the persona to be created from its owner using a special object description. This workflow causes the "enter attributes" dialog for personas to be populated with useful default values.</p>
+</div>
+<div class="paragraph">
+<p>All of the other activities for the create persona workflow are the same as the create user workflow described in the previous section.</p>
+</div>
+<div class="paragraph">
+<p>See the section "Customizing Persona Create Workflows" in the chapter "Customizing Program Logic" in the <em>DirX Identity Customization Guide</em> for information on how to configure the Persona from User activity.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_user_facet_workflows"><a class="anchor" href="#_create_user_facet_workflows"></a>Create User Facet Workflows</h3>
+<div class="paragraph">
+<p>You can create user facets in the same ways as for personas. The workflow for creating a user facet is basically the same as the workflow for creating a persona described in the section "Create Persona Workflows". The only difference is the first automatic activity <strong>User Facet from User</strong>, which sets default values for the new user facet taken from the associated user and configured in the object description <strong>UserFacetFromUser.xml</strong>.</p>
+</div>
+<div class="paragraph">
+<p>See the section "Customizing User Facet Create Workflows" in the chapter "Customizing Program Logic" in the <em>DirX Identity Customization Guide</em> for information on how to configure the <strong>User Facet from User</strong> activity.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_functional_user_workflows"><a class="anchor" href="#_create_functional_user_workflows"></a>Create Functional User Workflows</h3>
+<div class="paragraph">
+<p>You can create functional users in various ways. The following figure shows a typical workflow for administrative functional user creation:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch2_reqWFs/image4.gif" alt="Example of a Create Functional User Workflow">
+</div>
+<div class="title">Figure 4. Example of a Create Functional User Workflow</div>
+</div>
+<div class="paragraph">
+<p>The workflow shown in the figure is derived from the corresponding create user workflow, which is extended to include a new first activity:</p>
+</div>
+<div class="paragraph">
+<p><strong>Functional User from User</strong> (automatic) - creates the default values for the functional user to be created from its sponsor using a special object description. This workflow causes the "enter attributes" dialog for functional users to be populated with useful default values.</p>
+</div>
+<div class="paragraph">
+<p>All of the other activities for the create functional user workflow are the same as the create user workflow described in the previous section.</p>
+</div>
+<div class="paragraph">
+<p>See the section "Customizing Functional User Create Workflows" in the chapter "Customizing Program Logic" in the <em>DirX Identity Customization Guide</em> for information on how to configure the Functional User from User activity.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_privilege_workflows"><a class="anchor" href="#_create_privilege_workflows"></a>Create Privilege Workflows</h3>
+<div class="paragraph">
+<p>There are also many ways to define a workflow for a role - or more generally, a privilege - request. The following figure shows a typical workflow definition:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch2_reqWFs/image5.gif" alt="Example of a Create Role Workflow">
+</div>
+<div class="title">Figure 5. Example of a Create Role Workflow</div>
+</div>
+<div class="paragraph">
+<p>Because role creation is a complex task, the workflow takes a two-step approach. First, a person supplies a set of descriptive attributes to request the new role. When this "basis" request is approved, the workflow creates the role object and notifies a role administrator to complete the role definition. This workflow contains the following activities:</p>
+</div>
+<div class="paragraph">
+<p><strong>Enter General Attributes</strong> (people) - displays a set of descriptive attributes (mandatory or optional ones) the role requester must supply.</p>
+</div>
+<div class="paragraph">
+<p><strong>Approve Role Creation</strong> (people) - requires a set of persons (the participants) to approve the role creation request, possibly including a check for an existing role definition that can be used instead of the requested one.</p>
+</div>
+<div class="paragraph">
+<p><strong>Apply Change</strong> (automatic) - creates the preliminary LDAP role entry if the participants of <strong>Approve</strong> <strong>Role</strong> <strong>Creation</strong> accept the creation request.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if Rejected</strong> (automatic) - typically sends an e-mail notification to the initiator of this workflow if the participants of <strong>Approve</strong> <strong>Role</strong> <strong>Creation</strong> reject the role creation request.</p>
+</div>
+<div class="paragraph">
+<p><strong>Perform Administrative Tasks</strong> (people) - notifies the role administrator that a preliminary role object has been created and requests that he completes the role definition.This action may include tasks like setting the role ID, assigning permissions, role parameters and senior roles (and perhaps these additional objects must be created first), assigning users as owners and role administrators and defining approval and re-approval parameters.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if Role Request Completed</strong> (automatic) - typically sends an e-mail notification to the initiator of this workflow when the role administrator can complete the role definition successfully.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if Not Completed</strong> (automatic) - typically sends an e-mail notification to the initiator of this workflow when the role administrator finds that the role creation is not possible; for example, because there is a conflict with other role definitions.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if EXPIRED (automatic)</strong> - sends an e-mail to an administrator that the workflow has expired (the participants did not respond in time).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="understanding_modification_workflows"><a class="anchor" href="#understanding_modification_workflows"></a>Understanding Modification Workflows</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This type of workflow allows approval of object modifications if critical attributes are changed.You use attribute policies to define the list of critical attributes for an object type.Managing attribute modification approval comprises these steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Enabling attribute modification approval via the <strong>Attribute</strong> <strong>Modification</strong> <strong>Approval</strong> flag of the domain object.</p>
+</li>
+<li>
+<p>Configuring the corresponding attribute policies for each object type (critical attributes).<br>
+Note: either create your own attribute policies or copy the default policies to prevent your policies from being overwritten during upgrade installation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Each matching policy results in the start of one workflow.</p>
+</div>
+<div class="paragraph">
+<p>The next section provides an example for a user attribute modification workflow.You can set up similar modification workflows for other object types.</p>
+</div>
+<div class="sect2">
+<h3 id="_user_modification_workflows"><a class="anchor" href="#_user_modification_workflows"></a>User Modification Workflows</h3>
+<div class="paragraph">
+<p>The following figure shows a typical attribute modification workflow that is triggered by a change of the dxroulink or dxrlocationlink attributes.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch2_reqWFs/image6.gif" alt="Modify Location and Organization">
+</div>
+<div class="title">Figure 6. Modify Location and Organization</div>
+</div>
+<div class="paragraph">
+<p>The workflow shown in the figure contains the following activities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Approval of Attribute Modifications</strong> (people) - requests that a set of participants approve the modification of critical attributes. In this special case, we use all persons of the HR department as approvers. These persons are also allowed to change some of the attributes to their correct values before they accept the changes.</p>
+</li>
+<li>
+<p><strong>Apply Change</strong> (automatic) - changes the LDAP entry if the participants of the previous step accepted the modification. Up to now, the modifications do not exist. They exist only as an order object within the workflow instance.</p>
+</li>
+<li>
+<p><strong>Notification if Rejected</strong> (automatic) - typically sends an e-mail notification to the initiator of this workflow if the participants reject the modification request.</p>
+</li>
+<li>
+<p><strong>Notification if EXPIRED (automatic)</strong> - sends an e-mail to an administrator that the workflow has expired. Obviously the participants did not react in time.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The attribute modification workflow functions as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The modification workflow does not allow a participant to accept a part of the attributes and reject the rest.</p>
+</li>
+<li>
+<p>If several participants must approve, and all approve but some make changes to the data before they approve, DirX Identity takes the changes made by the last approver, and ignores the rest.</p>
+</li>
+<li>
+<p>If several workflows are started for the same attribute, DirX Identity takes the changes from the last approved change.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This feature is not applicable for:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Properties that depend on a master object.In this case, the change of the master attribute must be approved rather than the change of the dependent attribute.For more information, see the section "Using the Master Attribute" in the section "Customizing Objects" in the <em>DirX Identity Customization Guide</em>.</p>
+</li>
+<li>
+<p>Properties that are used as system properties for privilege assignment.The privilege assignments are handled by extra assignment approval workflows.</p>
+</li>
+<li>
+<p>Properties that are calculated automatically by the system to set some states or other system relevant values.</p>
+</li>
+<li>
+<p>Properties that are specific properties holding a set of individual properties.For example, dxrRPValues cannot be chosen, select dxrRPValues(c) or dxrRPValues(l) instead.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The workflow checks these rules and if it detects a violation, it reports it as an error message when the policy is saved.</p>
+</div>
+<div class="paragraph">
+<p><strong>Warning:</strong> You can bypass these checks by editing the attributes for approval in the attribute policy with a native LDAP editor (for example, DirX Identity&#8217;s Data View).However, this action may result in unexpected problems that are not covered by product support.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="understanding_assignment_workflows"><a class="anchor" href="#understanding_assignment_workflows"></a>Understanding Assignment Workflows</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This type of workflow only handles the approval of privilege assignments.In this section, we:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Describe how approval works.</p>
+</li>
+<li>
+<p>Examine the 4-eye approval, automatic (notification-only) approval and risk approval workflows.</p>
+</li>
+<li>
+<p>Explain how to set up approval workflows for different assignment operation types.</p>
+</li>
+<li>
+<p>Give some guidelines for determining when to implement privilege assignment approval and re-approval.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_how_approval_works"><a class="anchor" href="#_how_approval_works"></a>How Approval Works</h3>
+<div class="paragraph">
+<p>The following figure illustrates the approval process in DirX Identity Provisioning.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch2_reqWFs/image7.jpg" alt="The DirX Identity Provisioning Approval Process">
+</div>
+<div class="title">Figure 7. The DirX Identity Provisioning Approval Process</div>
+</div>
+<div class="paragraph">
+<p>The approval process works as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A privilege that is flagged for approval is assigned to a user. This action initiates a request workflow configured for assignment approval (the creation request is sent via HTTP/SOAP from the client to the Java-based Server).</p>
+</li>
+<li>
+<p>The request workflow service checks all active workflow templates to determine whether they fit (<strong>When Applicable</strong> section).</p>
+</li>
+<li>
+<p>The first workflow template that fits is converted to a workflow instance. The state is set to <strong>Running</strong>.</p>
+</li>
+<li>
+<p>The request workflow service starts all activities whose start conditions are satisfied and performs the assigned actions (for example, sending an e-mail to the relevant approver(s)).</p>
+</li>
+<li>
+<p>The request workflow service waits for responses from the approvers or for new approval workflow requests. <strong>Note</strong>: from time to time, it performs a full check of the instances to solve the problem of lost SOAP requests. The full check interval is configurable (the default is 5 minutes).</p>
+</li>
+<li>
+<p>When a user performs an approval (he accepts or rejects), a SOAP message informs the request workflow service again. It performs the necessary actions and calculates the next steps.</p>
+</li>
+<li>
+<p>When a workflow instance finishes, either successfully (state <strong>Succeeded</strong>) or with error (state <strong>Failed</strong>), the workflow is completed. If the approval was successful, the user-to-privilege assignment is enabled and a privilege resolution is performed automatically. Now the assignment is active.</p>
+</li>
+<li>
+<p>The workflow instance remains in the Identity Store based on the configured <strong>Expiration Time</strong>. Use the <strong>Cleanup Objects</strong> workflow with its corresponding cleanup rules to remove the expired instances from the Identity Store regularly. Note that all history information is removed from the expired instances before they can be deleted. Thus it is good practice to run the Extract Audit Trail workflow in advance (or to set up the corresponding collector of DirX Audit).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Changing an existing assignment or deleting an assignment also triggers an approval workflow if the privilege is flagged for approval.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s look at three examples of approval workflows: 4-eye approval, automatic (notification only) approval and risk approval.</p>
+</div>
+<div class="sect3">
+<h4 id="_4_eye_approval"><a class="anchor" href="#_4_eye_approval"></a>4-Eye Approval</h4>
+<div class="paragraph">
+<p>You can approve privilege assignments in various ways. A typical approval type is 4-eye approval if you assign a privilege to a user. Both the manager of the user and the manager of the privilege must approve. The following figure shows an example of this workflow:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch2_reqWFs/image8.gif" alt="4-Eye Approval Workflow">
+</div>
+<div class="title">Figure 8. 4-Eye Approval Workflow</div>
+</div>
+<div class="paragraph">
+<p>This workflow contains the following activities:</p>
+</div>
+<div class="paragraph">
+<p><strong>Approval by User Managers</strong> (people) - requires the user&#8217;s manager(s) to approve the privilege assignment, which means he accepts that the user receives these additional access rights to perform new tasks.</p>
+</div>
+<div class="paragraph">
+<p><strong>Approval by Privilege Managers</strong> (people) - requires the privilege&#8217;s manager(s) to approve that this user gets this privilege, which means that this user has access to the resources this privilege protects.</p>
+</div>
+<div class="paragraph">
+<p><strong>+ Merge (AND)</strong> - calculates the result of previous activities, which means that it calculates all applications states via AND.</p>
+</div>
+<div class="paragraph">
+<p><strong>o Merge (OR)</strong> - calculates the result of previous activities, which means that it calculates all applications states via OR.</p>
+</div>
+<div class="paragraph">
+<p><strong>Apply Approved Privilege Change</strong> (automatic) - assigns the privilege to the user if all participants approve the assignment. This activity includes a privilege resolution and generation of messages for real-time workflows.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if Rejected</strong> (automatic) - typically sends an e-mail notification to the related user that the privilege is not assigned, if the participants reject the assignment request.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if EXPIRED (automatic)</strong> - sends an e-mail to an administrator that the workflow has expired (the participants did not respond in time).</p>
+</div>
+<div class="paragraph">
+<p>Note: For details about configuration with access policies, see the subsection "Policies for Approvals" in the section "Delegated Administration" in the chapter "Managing Policies" in the <em>DirX Identity Provisioning Administration Guide</em>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_automatic_notification_only_approval"><a class="anchor" href="#_automatic_notification_only_approval"></a>Automatic (Notification Only) Approval</h4>
+<div class="paragraph">
+<p>Another example is a workflow that simply sends a notification when a privilege is assigned to a user. In this example, the workflow informs a user that he has received the "Signature Level 1" privilege with some valuable hints about using it:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch2_reqWFs/image9.gif" alt="Signature Information Workflow">
+</div>
+<div class="title">Figure 9. Signature Information Workflow</div>
+</div>
+<div class="paragraph">
+<p>This workflow consists of these activities:</p>
+</div>
+<div class="paragraph">
+<p><strong>Apply Privilege and Notify User</strong> (automatic) - assigns the privilege to the user automatically, including a privilege resolution and generation of messages for real-time workflows. The activity also sends a notification to the user about this assignment.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if EXPIRED (automatic)</strong> - sends an e-mail to an administrator that the workflow has expired. Obviously the participants did not react in time.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_risk_approval"><a class="anchor" href="#_risk_approval"></a>Risk Approval</h4>
+<div class="paragraph">
+<p>In a risk approval workflow, the first activity calculates the new risk level that would become effective if the assignment was approved. If the risk level is computed to high (is equal to 3), an additional approval step <strong>Approval by Company Head</strong> must be executed if <strong>Approve</strong> <strong>by</strong> <strong>Privilege</strong> <strong>Manager</strong> has been accepted. The following figure shows an example of this workflow:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch2_reqWFs/image10.gif" alt="Risk Approval Workflow">
+</div>
+<div class="title">Figure 10. Risk Approval Workflow</div>
+</div>
+<div class="paragraph">
+<p>This workflow contains the following activities:</p>
+</div>
+<div class="paragraph">
+<p><strong>Calculate Risk</strong> (automatic) - simulates a risk level resolution for the requested privilege assignment. For the new/deleted group assignments, it calculates the risk and then merges these new risks with the risk values already computed to calculate the new potential risk level. The activity then stores this new risk level in the application state and the workflow context (values of 0, 1, 2 and 3 are possible, with 3 corresponding to a high risk assignment).</p>
+</div>
+<div class="paragraph">
+<p><strong>Approval by Privilege Manager</strong> (people) - requires the privilege&#8217;s manager(s) to approve that this user gets this privilege, which means that this user has access to the resources this privilege protects.</p>
+</div>
+<div class="paragraph">
+<p><strong>+ Merge</strong> (AND) - calculates the result of previous activities, where <strong>Approve by Privilege Manager</strong> was accepted and Calculate Risk computed a high risk (a value of 3).</p>
+</div>
+<div class="paragraph">
+<p><strong>Approval by Company Head</strong> (people) - requires the company head to approve that this user receive this privilege, which means that this user has access to the resources this privilege protects. This activity is only entered if a high risk for the assignment was calculated and the first approval was accepted.</p>
+</div>
+<div class="paragraph">
+<p><strong>+ Merge</strong> (AND) - calculates the result of previous activities, which means that it calculates all applications states via AND. <strong>Approve by Privilege Manager</strong> was accepted and <strong>Calculate Risk</strong> computed a lower risk (not equal to 3) so that no additional approval is necessary.</p>
+</div>
+<div class="paragraph">
+<p><strong>o Merge (OR)</strong> - calculates the result of previous activities, which means that it calculates all applications states via OR. Either <strong>Approval by Company Head</strong> was accepted or <strong>Approve by Privilege Manage</strong>r was accepted and the risk was not calculated to be high.</p>
+</div>
+<div class="paragraph">
+<p><strong>Apply Approved Privilege Change</strong> (automatic) - assigns the privilege to the user if all participants approve the assignment. This activity includes a privilege resolution and generation of messages for real-time workflows.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if Rejected</strong> (automatic) - typically sends an e-mail notification to the related user that the privilege is not assigned, if the participants reject the assignment request. This activity is called if the privilege manager has rejected the assignment.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if High Risk Rejected</strong> (automatic) - typically sends an e-mail notification to the related user that the privilege is not assigned, if the participants reject the assignment request. This activity is called if <strong>Approval by Company Head</strong> was rejected.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notification if EXPIRED</strong> (automatic) - sends an e-mail to an administrator that the workflow has expired (the participants did not respond in time).</p>
+</div>
+<div class="paragraph">
+<p>Note: For details about configuration with access policies, see the subsection "Policies for Approvals" in the section "Delegated Administration" in the chapter "Managing Policies" in the <em>DirX Identity Provisioning Administration Guide</em>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_understanding_assignment_operation_types"><a class="anchor" href="#_understanding_assignment_operation_types"></a>Understanding Assignment Operation Types</h3>
+<div class="paragraph">
+<p>DirX Identity can distinguish between several operation types for assignments. These operation types are available:</p>
+</div>
+<div class="paragraph">
+<p><strong>Create</strong> - a privilege is assigned either to another privilege or a user.</p>
+</div>
+<div class="paragraph">
+<p><strong>Modify</strong> - a privilege assignment to a user is to be modified (for example the end time or a role parameter value changes).</p>
+</div>
+<div class="paragraph">
+<p><strong>Delete</strong> - a privilege is removed either from another privilege or a user.</p>
+</div>
+<div class="paragraph">
+<p><strong>SoD</strong> - an SoD rule requires approval of a user-to-privilege assignment.</p>
+</div>
+<div class="paragraph">
+<p><strong>Re-Approval</strong> - an existing user-to-privilege assignment is to be re-approved at the defined time.</p>
+</div>
+<div class="paragraph">
+<p>You can set up workflows for specific operation types either from a privilege via the corresponding direct workflow link or via the <strong>When Applicable</strong> section in a request workflow definition.</p>
+</div>
+<div class="paragraph">
+<p>Note that links between privileges allow only the operations <strong>assign</strong> and <strong>remove</strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_guidelines_for_approving_privilege_assignments"><a class="anchor" href="#_guidelines_for_approving_privilege_assignments"></a>Guidelines for Approving Privilege Assignments</h3>
+<div class="paragraph">
+<p>When talking about approval of assignments, you should be aware that many privilege assignments in a company do not require approval. For example, consider the following policies:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>All of your employees - internal and external ones - are to have a Windows account and an e-mail box. This policy is best implemented with a provisioning rule that provides a basic role. Approval does not make sense in this case.</p>
+</li>
+<li>
+<p>All of your internal employees are to have access to public pages in your intranet.This policy is best handled with a provisioning rule that acts on the attribute value employeeType=Internal.Approval does not make sense in this case.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>There are a lot of other cases where approval does not make sense.A good rule of thumb is to determine whether or not you required approval for a privilege when your process was paper-based.Another important issue is to check whether a privilege is compliance-relevant and should therefore be approved.</p>
+</div>
+<div class="paragraph">
+<p>You should thoroughly define which privileges need approval and only define approval workflows for these items.Otherwise you end up with a lot of unnecessary overhead, which results in additional costs and time-consuming processes because approval costs time.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_guidelines_for_re_approving_privilege_assignments"><a class="anchor" href="#_guidelines_for_re_approving_privilege_assignments"></a>Guidelines for Re-Approving Privilege Assignments</h3>
+<div class="paragraph">
+<p>The re-approval feature is even more critical than the approval feature because it generates approval requests fairly frequently.Thus we recommend that you make sure that it&#8217;s really necessary to set up re-approval for a specific privilege.Re-approval makes sense for highly critical access to business-critical applications as well as for compliance-relevant access rights.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="understanding_deletion_workflows"><a class="anchor" href="#understanding_deletion_workflows"></a>Understanding Deletion Workflows</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This type of workflow allows approval of object deletions.You use delete policies to define approval for deletion of a specific object type.</p>
+</div>
+<div class="paragraph">
+<p>Managing object deletion approval comprises these steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Configuring a <strong>Delete Policy</strong> that contains all object types whose deletion is to be approved.<br>
+Note: either create your own attribute policies or copy the default policies to prevent overwritten policies during upgrade installation.</p>
+</li>
+<li>
+<p>Defining one or more deletion request workflows for each of these object types.In the When Applicable section of the workflow, set the operation to <strong>delete</strong> and the subject field to the corresponding object type.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Note that you can only define a deletion policy for an object type (for example, roles).It is not possible to define a policy for a portion of the objects.</p>
+</div>
+<div class="paragraph">
+<p>Hint: You can specify different object descriptions as a workaround, but this task requires that you set up a mapping section. For example, you could add a custom flag to the object "Request workflow for deletion" and then include this flag into the mapping section of your object descriptions.</p>
+</div>
+<div class="paragraph">
+<p>The next sections provide</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>an overview of the deletion procedure.</p>
+</li>
+<li>
+<p>a list of object types that support deletion workflows.</p>
+</li>
+<li>
+<p>an example of a role deletion workflow. You can set up similar modification workflows for other object types.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_deletion_procedure"><a class="anchor" href="#_deletion_procedure"></a>Deletion Procedure</h3>
+<div class="paragraph">
+<p>The deletion procedure depends on the object type and whether auditing is enabled. The basic procedure is shown in the next figure.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch2_reqWFs/image11.gif" alt="Deletion Procedure">
+</div>
+<div class="title">Figure 11. Deletion Procedure</div>
+</div>
+<div class="paragraph">
+<p>The procedure comprises these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Receiving a deletion request, the service layer checks for an active Delete Policy for this object type.</p>
+</li>
+<li>
+<p>If no policy is active, it proceeds with step 5.</p>
+</li>
+<li>
+<p>If a policy is active, a deletion approval workflow is started. If none is found, an error is reported.</p>
+</li>
+<li>
+<p>If the object deletion is rejected, the object is not deleted.</p>
+</li>
+<li>
+<p>If the object deletion is accepted, the deletion procedure is performed.</p>
+</li>
+<li>
+<p>If auditing is disabled, the object-specific procedure is performed immediately. In most cases, this is a direct deletion of the object.</p>
+</li>
+<li>
+<p>If auditing is enabled, history / audit information is written to the objects into the attribute dxrHistory. This means that objects cannot be deleted immediately; they are set to the DELETED state. You must set up workflows for history extraction and object deletion, which guarantees that no audit information is lost.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_supported_object_types"><a class="anchor" href="#_supported_object_types"></a>Supported Object Types</h3>
+<div class="paragraph">
+<p>Deletion workflows are not yet supported for all object types. The following types are currently supported (the deletion procedure is briefly described):</p>
+</div>
+<div class="paragraph">
+<p><strong>Groups</strong> - are always set to DELETED status. See the chapter "Managing States" in the <em>DirX Identity Provisioning Administration Guide</em> for more information.</p>
+</div>
+<div class="paragraph">
+<p><strong>JavaScripts</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Nationalization</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Object Descriptions</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Proposal Lists</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Role Parameters</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Roles</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Permissions</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Users</strong> - are always set to TBDEL status. See the chapter "Managing States" in the <em>DirX Identity Provisioning Administration Guide</em> for more information.</p>
+</div>
+<div class="paragraph">
+<p>Policies</p>
+</div>
+<div class="paragraph">
+<p><strong>Access Policies</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Attribute Policies</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Audit Policies</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Delete Policies</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Event Policies</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Password Policies</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>SoD Policies</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p>Business Objects</p>
+</div>
+<div class="paragraph">
+<p><strong>Context</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Cost Units</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Countries</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Locations</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Organizations</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Organizational Units</strong> - direct deletion</p>
+</div>
+<div class="paragraph">
+<p><strong>Projects</strong> - direct deletion</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_role_deletion_workflow"><a class="anchor" href="#_role_deletion_workflow"></a>Role Deletion Workflow</h3>
+<div class="paragraph">
+<p>The following figure shows a typical delete workflow that is triggered by a deletion of a role. This workflow is started when the delete policy for roles is active.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch2_reqWFs/image12.gif" alt="Delete Role Workflow">
+</div>
+<div class="title">Figure 12. Delete Role Workflow</div>
+</div>
+<div class="paragraph">
+<p>The workflow shown in the figure contains the following activities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Approval of Object Deletion</strong> (people) - requests that the role administrators must approve the deletion of a role.</p>
+</li>
+<li>
+<p><strong>Apply Change</strong> (automatic) - changes the LDAP role entry if the participants of the previous step accepted the deletion.Up to this point, the deletion request existed only as an order object within the workflow instance.</p>
+</li>
+<li>
+<p><strong>Notification if Rejected</strong> (automatic) - typically sends an e-mail notification to the initiator of this workflow if the participants reject the modification request.</p>
+</li>
+<li>
+<p><strong>Notification if EXPIRED (automatic)</strong> - sends an e-mail to an administrator that the workflow has expired (the participants did not respond in time).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The object deletion workflow functions as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The deletion procedure used depends on the type of object and the audit settings.Users and Privileges are not directly deleted.Instead the status is set to DELETED and the end date is set.The CleanupObjects rule (typically part of a Tcl-based workflow) needs to be run to delete the object completely.This deletion may be delayed until the history (audit) information is removed from the object entry.</p>
+</li>
+<li>
+<p>Other objects are immediately deleted.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="understanding_certification_workflows"><a class="anchor" href="#understanding_certification_workflows"></a>Understanding Certification Workflows</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Certification workflows allow you to certify various object types.DirX Identity currently supports workflows for certification campaigns, which means that you can verify and clean up the manual assignments of a privilege to users.</p>
+</div>
+<div class="paragraph">
+<p>To use this type of certification, perform these steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Configure the certification campaign feature, including a corresponding schedule.</p>
+</li>
+<li>
+<p>Create a certification campaign for privileges or users.</p>
+</li>
+<li>
+<p>Configure a certification campaign with the <strong>Review the revocation of all manually assigned privileges that are rejected or left uncertified</strong> option for the <strong>Apply</strong> <strong>Changes</strong> configuration field.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For details about certification campaigns, read the DirX Identity Use Case Document <em>Certification Campaigns</em>.</p>
+</div>
+<div class="sect2">
+<h3 id="_certification_campaign_workflows"><a class="anchor" href="#_certification_campaign_workflows"></a>Certification Campaign Workflows</h3>
+<div class="paragraph">
+<p>The certification campaign workflows are normal assignment workflows.For more information about this type of workflow, see the section "Guidelines for Approving Privilege Assignments".</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="understanding_service_management_workflows"><a class="anchor" href="#understanding_service_management_workflows"></a>Understanding Service Management Workflows</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Service management workflows help to perform tasks in a service management environment (ticket-based workflows).</p>
+</div>
+<div class="paragraph">
+<p>DirX Identity currently supports two use cases:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Manual provisioning of offline target systems</p>
+</li>
+<li>
+<p>Workflows for ticket processing from a source ticket system</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For more information about service management use cases, read the DirX Identity Use Case Document Service Management.</p>
+</div>
+<div class="sect2">
+<h3 id="_manual_provisioning_workflows"><a class="anchor" href="#_manual_provisioning_workflows"></a>Manual Provisioning Workflows</h3>
+<div class="paragraph">
+<p>DirX Identity currently supports only workflows for manual provisioning, which means that you can handle manual provisioning for systems that are not (yet) connected to the Identity Store.</p>
+</div>
+<div class="paragraph">
+<p>To use this type of workflow, perform these steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Set up a target system of type Service Management. Part of this setup is the configuration of a Java-based synchronization workflow that uses a request workflow connector to start a corresponding request workflow for each action.</p>
+</li>
+<li>
+<p>Set up the necessary manual provisioning request workflow.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following figure shows a typical manual provisioning workflow that can be used in service management environments.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch2_reqWFs/image13.gif" alt="Manual Provisioning">
+</div>
+<div class="title">Figure 13. Manual Provisioning</div>
+</div>
+<div class="paragraph">
+<p>The workflow shown in the figure contains the following activities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Split Orders</strong> (automatic) - checks the order type (Add, Modify, Delete) and sets the Application State accordingly. The following activities are started according to this value.</p>
+</li>
+<li>
+<p><strong>Addition by Administrator</strong> (people) - requests that an administrator adds the object (account or group) with all defined properties into the offline target system. After completion of this task, the approver confirms the activity (accepts it). This step is configured to take the owners of the privilege as approvers.</p>
+</li>
+<li>
+<p><strong>Modification by Administrator</strong> (people) - requests that an administrator modifies an object (account or group) with all defined properties in the offline target system. After completion of this task, the approver confirms the activity (accepts it). This step is configured to take the owners of the privilege as approvers.</p>
+</li>
+<li>
+<p><strong>Deletion by Administrator</strong> (people) - requests that an administrator deletes the object (account or group) in the offline target system. After completion of this task, the approver confirms the activity (accepts it). This step is configured to take the owners of the privilege as approvers.</p>
+</li>
+<li>
+<p><strong>Set States</strong> (automatic) - sets the target system state (dxrTSState) of the object according to the operation; for example, a new account is set from NONE to ENABLED.</p>
+</li>
+<li>
+<p><strong>Notification if Rejected</strong> - sends an e-mail to the corresponding user if the manual provisioning request was refused by the administrator.</p>
+</li>
+<li>
+<p><strong>Notification if EXPIRED (automatic)</strong> - sends an e-mail to an administrator that the workflow has expired (the participants did not respond in time).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The manual provisioning workflow works as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In Web Center, the approvers receive a form with the specific request and its details.</p>
+</li>
+<li>
+<p>They perform the corresponding task in the target system.</p>
+</li>
+<li>
+<p>After performing the task, they accept the form. DirX Identity sets the target system state (dxrTSState) attribute for accounts and groups accordingly or moves the user to the correct member attribute (for example, from dxrGroupMemberAdd to dxrGroupMemberOK).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For more information about manual provisioning, refer to the DirX Identity Use Case Document <em>Service Management</em>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_process_ticket_workflows"><a class="anchor" href="#_process_ticket_workflows"></a>Process Ticket Workflows</h3>
+<div class="paragraph">
+<p>DirX Identity supports workflows to process incoming tickets from source ticket systems. These tickets are converted into DirX Identity orders that are processed by a corresponding request workflow.</p>
+</div>
+<div class="paragraph">
+<p>To use this type of workflow, perform these steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Set up a ticket web service interface that consumes the tickets sent from a service management workflow. Use the sample ticket web service interface as starting point.</p>
+</li>
+<li>
+<p>Use the provided "Process Ticket" workflow sample and adapt it to your requirements.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following figure shows a typical ticket-processing workflow that can be used in service management environments.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ch2_reqWFs/image14.gif" alt="Process Ticket">
+</div>
+<div class="title">Figure 14. Process Ticket</div>
+</div>
+<div class="paragraph">
+<p>The workflow shown in the figure contains the following activities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Add attributes</strong> (automatic) - adds some fixed attributes to the subject order. In the pre-configured example, the <strong>employeeType</strong> is set to <strong>Contractor</strong> and the <strong>dxmOprMaster</strong> is set to <strong>Service</strong> <strong>Management</strong>.</p>
+</li>
+<li>
+<p><strong>Apply order</strong> (automatic) - this step executes the order(s). For example, if you send a create user request with two role assignments, the user is created and the assignments are resolved. If an assignment requires approval, a child workflow is started automatically.</p>
+</li>
+<li>
+<p><strong>Wait for child workflows</strong> (conditional) - this activity waits for all started child workflows to complete.</p>
+</li>
+<li>
+<p><strong>Wait for completed provisioning</strong> (automatic) - this activity waits for all provisioning actions to target systems to be completed.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The Process Ticket workflow as defined in this default workflow works completely automatically without any user interaction. It instantiates or changes the object, assigns privileges and eventually starts a child workflow. Then it waits until the child workflows and the generated provisioning actions are complete.</p>
+</div>
+<div class="paragraph">
+<p>For more information about ticket processing, read the DirX Identity Use Case Document <em>Service Management</em>.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

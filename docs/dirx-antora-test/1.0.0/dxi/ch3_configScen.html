@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Configuring Custom Scenarios :: DirX Docs Test with Antora</title>
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">DirX Docs Test with Antora</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dirx-antora-test" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">dirx-antora-test</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Overview</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Start</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">DirX Identity</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="DirX-Identity-V8.10-SP2_497680389.html">DirX Identity V8.10 SP2</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Documentation_501940226.html">Documentation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Introduction_501022729.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Challenge_502300686.html">Challenge</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Overview_501350431.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Glossary_501678118.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Tutorial_501842013.html">Tutorial</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Getting-Started_502267994.html">Getting Started</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Tutorials_502005954.html">Tutorials</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Sample-Domain_503283770.html">Sample Domain</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Provisioning-Administration-Guide_504201235.html">Provisioning Administration Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Managing-the-Provisioning-System_504463382.html">Managing the Provisioning System</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="Planning-Checklist_504660043.html">Planning Checklist</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="User-Management_506724354.html">User Management</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Application Development Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch1_applsref.html#understanding_the_default_application_workflow_technology">Understanding the Default Application Workflow Technology</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1_applsref.html#understanding_request_workflows">Understanding Request Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1_applsref.html#understanding_java_based_workflows">Understanding Java-based Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch1_applsref.html#understanding_tcl_based_workflows">Understanding Tcl-based Workflows</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="ch2_reqWFs.html#using_request_workflows">Using Request Workflows</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_reqWFs.html#understanding_creation_workflows">Understanding Creation Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_reqWFs.html#understanding_modification_workflows">Understanding Modification Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_reqWFs.html#understanding_assignment_workflows">Understanding Assignment Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_reqWFs.html#understanding_deletion_workflows">Understanding Deletion Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_reqWFs.html#understanding_certification_workflows">Understanding Certification Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ch2_reqWFs.html#understanding_service_management_workflows">Understanding Service Management Workflows</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="#configuring_custom_scenarios">Configuring Custom Scenarios</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">dirx-antora-test</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">dirx-antora-test</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">dirx-antora-test</a></li>
+    <li>Application Development Guide</li>
+    <li><a href="#configuring_custom_scenarios">Configuring Custom Scenarios</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="https://github.com/DE-MUC-CYSP-DIRX/playground.wiki/edit/master/docs/modules/dxi/pages/ch3_configScen.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Configuring Custom Scenarios</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Creating a customized DirX Identity scenario both in the Provisioning and Connectivity configuration and maintaining its objects can be a complex task. DirX Identity provides easy-to-use, comprehensive tools to simplify this task. You can use the Identity Manager <strong>Provisioning</strong> and <strong>Connectivity</strong> views to create identity creation, maintenance, and provisioning workflows that are consistent with the target system structure in your Provisioning domain.</p>
+</div>
+<div class="paragraph">
+<p>To create and configure a custom DirX Identity scenario for a DirX Identity domain, perform the following steps with Identity Manager:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the target system creation wizard in <strong>Provisioning</strong> &#8594; <strong>Target</strong> <strong>Systems</strong> to create a new target system in your new Provisioning domain. The wizard automatically creates a new scenario in the Connectivity domain provided no other scenarios yet exist and places the necessary configuration objects (connected directories and workflows) into this scenario.</p>
+</li>
+<li>
+<p>Use the <strong>Provisioning</strong> view to refine the configuration of the newly created target system and its objects.</p>
+</li>
+<li>
+<p>Use the <strong>Connectivity</strong> view to refine the configuration of the newly created maintenance and target system workflows.</p>
+</li>
+<li>
+<p>Create and maintain additionally the necessary identity creation workflows (source workflows).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For additional target systems, perform these steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the target system wizard to create additional target systems. The necessary configuration objects (connected directories and workflows) are added to your existing scenario in the Connectivity view automatically.</p>
+</li>
+<li>
+<p>Use the <strong>Provisioning</strong> view to refine the configuration of the newly created target system and its objects.</p>
+</li>
+<li>
+<p>Use the <strong>Connectivity</strong> view to refine the configuration of the newly created maintenance and target system workflows.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To create clustered target systems, see the section "Creating Cluster Target Systems".</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_creating_the_new_scenario"><a class="anchor" href="#_creating_the_new_scenario"></a>Creating the New Scenario</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can use the target system creation wizard to create a new target system and a new custom Connectivity scenario for your Provisioning domain. To run the target system creation wizard in this way, you need to have:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A fully configured Provisioning customer domain that contains only the default target system DirXmetaRole.</p>
+</li>
+<li>
+<p>An installed Connectivity configuration.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To create the first target system and set up the new Connectivity scenario automatically:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Log in to DirX Identity Manager and select <strong>Provisioning</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Domain Configuration</strong> view.</p>
+</li>
+<li>
+<p>Click the top-level object (it has the name of your Provisioning domain).</p>
+</li>
+<li>
+<p>Check the <strong>Connectivity configuration</strong> parameter in the <strong>General</strong> tab. If it is not correct, change it to the server where your Connectivity configuration domain is installed.</p>
+</li>
+<li>
+<p>Click the <strong>Target Systems</strong> view.</p>
+</li>
+<li>
+<p>Optionally you can create a folder or several folders that reflect your target system environment.</p>
+</li>
+<li>
+<p>Click either on the top level object <strong>Target Systems</strong> or on one of the created folders, and then select <strong>New</strong> &#8594; <strong>Target System</strong>. The Target System Wizard opens. Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Select one of the available target system templates. Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Set the name of the new target system. Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Set the target system advanced parameters. Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Set the target system options. These might differ according to the target system template. Click <strong>Next</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>At this point, we have defined the parameters for the target system object in the Provisioning domain. Now the target system creation wizard detects that a scenario does not yet exist and prompts for the parameters that describe how to create the scenario:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The wizard will automatically create a new scenario with the same name as your Provisioning domain and will create a new identity store representation in your new scenario.</p>
+</li>
+<li>
+<p>Next, the wizard prompts for the <strong>Maintenance Workflows</strong> to copy to the new scenario. Click <strong>Next</strong>. The wizard copies the workflows (this action takes some time to complete).</p>
+</li>
+<li>
+<p>Now the wizard prompts for the <strong>Connected Directory</strong> template to be used for the new target system. Use either the proposed templates (Show preferred) or choose any of the other available templates (Show all). The latter choice makes sense, for example, if you intend to create an eDirectory target system. In this case, the Provisioning view assumes an LDAP type, whereas the Connectivity connected directory should be of type NDS (so choose the NDS template). Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>You can synchronize the schema and change the attribute configuration of the new connected directory (only for target systems where this makes sense) in the next two steps. Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>The wizard&#8217;s Configuration step (and depending on the target system, an additional next step) lets you define the most important parameters:</p>
+</li>
+<li>
+<p><strong>Account Base</strong> and <strong>Group Base</strong> of the target system have already been defined and cannot be changed.</p>
+</li>
+<li>
+<p>Set the <strong>Service</strong> and the <strong>Bind Profile</strong> parameters to the values of your target system connected directory.</p>
+</li>
+<li>
+<p>Set the <strong>Connected Directory</strong> parameters. These parameters may differ depending on the connected directory type.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Now the target system wizard asks for the <strong>Provisioning Workflows</strong> to create. Select from <strong>Synchronization</strong>, <strong>Validation</strong> and <strong>Password</strong> <strong>Synchronization</strong>.</p>
+</li>
+<li>
+<p>If you select <strong>Password</strong> <strong>Synchronization</strong>, you need to fill in the next four steps. For the other selections, the target system wizard copies and configures the workflows.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>When the wizard finishes, you should have a completely configured Connectivity scenario with all of the necessary elements. The configured workflows should run. Of course, you might need to change some details, like the mapping of additional account and group attributes. The next section describes how to make these changes.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_refining_the_scenario"><a class="anchor" href="#_refining_the_scenario"></a>Refining the Scenario</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can use the <strong>Provisioning</strong> &#8594; <strong>Target</strong> <strong>Systems</strong> view to maintain your newly created scenario. Click any of the target systems in the <strong>Target Systems</strong> view and select <strong>Connectivity</strong>. The subsequent menu selections allow you to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Change the configuration of the connected directory (<strong>Configure Connected Directory</strong>).</p>
+</li>
+<li>
+<p>View the connected directory (if the Viewer command is entered correctly) (<strong>Open Connected Directory</strong>).</p>
+</li>
+<li>
+<p>Copy new workflows to the workflow line between <strong>Identity Store</strong> and the connected directory (<strong>New Workflow</strong>).</p>
+</li>
+<li>
+<p>Assign an existing workflow to the workflow line between <strong>Identity</strong> <strong>Store</strong> and the connected directory (<strong>Assign Workflow</strong>).</p>
+</li>
+<li>
+<p>Configure, run, report or remove the validation workflow (<strong>Validation</strong>).</p>
+</li>
+<li>
+<p>Configure, run, report or remove the synchronization workflow (<strong>Synchronization</strong>).</p>
+</li>
+<li>
+<p>Configure, run, report or remove any of the other assigned workflows (<strong>Workflows</strong>).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can also manage the <strong>Identity Store</strong> connected directory from here. Right-click the Target Systems root node and select <strong>Connectivity</strong>. The subsequent menu selections allow you to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Change the configuration of <strong>Identity</strong> <strong>Store</strong> (<strong>Configure Connected Directory</strong>).</p>
+</li>
+<li>
+<p>View the connected directory (if the Viewer command is entered correctly) (<strong>Open Connected Directory</strong>).</p>
+</li>
+<li>
+<p>Copy new workflows to the workflow line between <strong>Identity Store</strong> and the connected directory (<strong>New Workflow</strong>).</p>
+</li>
+<li>
+<p>Assign an existing workflow to the workflow line between <strong>Identity Store</strong> and the connected directory (<strong>Assign Workflow</strong>).</p>
+</li>
+<li>
+<p>Configure, run, report or remove one of the assigned workflows (<strong>Workflows</strong>).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>As you can see, the most important features of the Connectivity view are also available in the Provisioning view.</p>
+</div>
+<div class="paragraph">
+<p>Scheduling and Combining Workflows</p>
+</div>
+<div class="paragraph">
+<p>You should set up schedules that define when your created workflows shall run. The methods you use to set up schedules for DirX Identity Connectivity scenarios are highly dependent on your environment. We recommend that you:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Run synchronization workflows periodically, for example, every half hour. Optionally you can use a nested workflow that performs account-to-user joining after each run.</p>
+</li>
+<li>
+<p>Run policy execution workflows and privilege execution after each creation workflow or after a sequence of creation workflows (use nested workflows and run them once a day or more often).</p>
+</li>
+<li>
+<p>Run validation workflows each night or during each weekend (depending on the number of accounts and groups in your target systems). We recommend that you use a nested workflow that performs account-to-user joining after each run.</p>
+</li>
+<li>
+<p>Run check consistency workflows every night or during each weekend.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_creating_the_identity_creation_workflows"><a class="anchor" href="#_creating_the_identity_creation_workflows"></a>Creating the Identity Creation Workflows</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The target system creation wizard helps you to create the initial Connectivity scenario and copies and configures everything that is necessary to handle the provisioning of the target systems. However, the wizard does not handle identity creation workflows. You must use the <strong>Connectivity</strong> view to create and maintain these workflows. For information about these tasks, see the <strong>Importing Identities</strong> section in the "Getting Started" chapter of the <em>DirX Identity Tutorial</em>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_creating_cluster_target_systems"><a class="anchor" href="#_creating_cluster_target_systems"></a>Creating Cluster Target Systems</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Creating clustered target systems is a bit different from creating a single target system. Read the section "Cluster Workflows" in the <em>DirX Identity Connectivity Administration Guide</em> to understand the concept of cluster workflows. The chapter "Java-based Workflow Architecture" in this guide provides additional information.</p>
+</div>
+<div class="paragraph">
+<p>Before we start with the creation procedure, be aware that the structure for cluster target systems is fixed:</p>
+</div>
+<div class="paragraph">
+<p><strong>Target Systems</strong> &#8594; <em>cluster_container</em> &#8594; <em>cluster</em> &#8594; <em>target_system</em></p>
+</div>
+<div class="paragraph">
+<p>Here is an example that shows how you can use this structure:</p>
+</div>
+<div class="paragraph">
+<p>Target Systems<br>
+UNIX-Clusters<br>
+Linux-Cluster<br>
+Linux1<br>
+Linux2<br>
+&#8230;&#8203;<br>
+Linux<em>n</em><br>
+Windows-Clusters<br>
+Europe-Cluster<br>
+ADS-EU1<br>
+ADS-EU2<br>
+&#8230;&#8203;<br>
+US-Cluster<br>
+ADS-US1<br>
+ADS-US2<br>
+&#8230;&#8203;<br>
+Other-Clusters<br></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>The UNIX-Clusters folder comprises a Linux-Cluster with the target systems Linux1 to Linux__n__. The configuration of each cluster is identical except for some specific parameters like server addresses and bind profiles. The Windows clusters in this example are structured according to areas.
+
+To set up clustered target systems, perform these steps:
+
+* Select the *Target Systems* view and then click the top node. Select *New Cluster Container* from the context menu and create a cluster container. In our example above, these are the UNIX-Clusters and Windows-Clusters objects.
+* Click the created object and then select *New Cluster* from the context menu. Define a name for your cluster. In our example, this would be for the UNIX-Clusters cluster container the object Linux-Cluster.
+
+You can create as many new target systems for your cluster below these clusters as you need. DirX Identity provides Web services for target system creation that are designed to set up cluster target systems efficiently, because this task requires setting many parameters for each system. Alternatively, you can create these target systems by hand, as follows:
+
+* Use the target system wizard to create a first target system below the cluster folder. Select the workflows that are necessary for provisioning. Select the cluster workflows - if present - for your target system template, or select non-cluster workflows. You can easily adjust them to work with cluster target systems.
+* After creating the first target system, move the *Configuration* folder one level up just below the cluster folder to allow its use by every subsequently created target system. Remember that all target systems in a cluster use the same set of object descriptions and other configuration definitions. Note that the *Configuration* folder will not be found if it is located anywhere else; that is, anywhere other than below the target system or - for a cluster - in the cluster folder that corresponds to the target systems that belong to the cluster.
+* If you were not able to select cluster workflows in the step above, change the copied workflows in the Expert view of the Connectivity view group:
+* Change the controller to the corresponding cluster controller type.
+* Adjust any other parameters that need to be adapted.
+
+Now you can create additional cluster target systems:
+
+* Use the target system wizard again, but do not select additional workflows. Remember that you can use one provisioning workflow for all target systems in a cluster. Delete the *Configuration* folder beneath the target system created again by the target system wizard, because you'll use the one you moved up one level after you created the first target system.
+* For every created target system, set these parameters:
+* Set the *Connected Directory* link on the General tab to the same connected directory as the first target system.
+* Create an account object, for example, named *bindaccount*, for the purpose of binding to the connected system beneath the *Accounts* or *Accounts* *and* *Groups* container. Account objects are not allowed to be created under a different container. Then move it up one level in the Data View to exclude it from synchronization to the connected system. The link to this bind account is set in the *Bind* *Parameters* section in the *Server* *Connection* tab of the target system. Set the password of this account in the Data View *userPassword* attribute. This action sets the *dxmPassword* accordingly. Using an existing account that is linked to a user can cause problems because the workflow may no longer be able to log in to the connected system if the password is changed. Therefore we recommend using a separate bind account where you manage the password manually. As this account may be used as access for password modifications, it must have sufficient access rights (preferably an administrator account) in the connected system. +
+ +
+Note: The *dxrName* attribute of the bind account must contain the bind user name in the form _domain_*\*_user name_.
+* Set all other necessary parameters on the Workflow Configuration (for some target system types this tab is called Server Connection), Connector Configuration and Environment Properties tabs. These parameters are specific to the target system. Keep in mind that all target systems in the cluster use the same cluster workflows configured in the Connectivity view group. +
+ +
+If, for example, you want to specify some connection-specific properties like the following ones for the SapECCUMConnector: +
+ +
+&lt;property name="client" value=800/&gt; +
+&lt;property name="accessToCUA" value="FALSE"/&gt; +
+ +
+you must specify those properties as _tag_*=*_value_ pairs (client=800, accessToCUA=FALSE) in the Connector Configuration tab - or directly dxmSpecificAttributes in the Data View - of the Provisioning Target System object. +
+ +
+The _tag_*=*_value_ pairs specified in the Connector Configuration or Server Connection tabs are stored in the LDAP attribute dxmSpecificAttributes and added to the &lt;connection&gt; section of the specific target system connector on workflow execution. +
+ +
+The _tag_*=*_value_ pairs specified in the Environment Properties tab are stored in the LDAP attribute dxrEnvironmentProperties. The environment properties must contain at least those attributes that are needed in a non-clustered workflow and specified in the Provisioning tab of the Connected Directory, like role_ts_account_base, role_ts_group_base or user_base. You can specify any property here and refer to it on the Connectivity workflow side - for example, in channel search base definitions like $\{env.user_base} - to restrict the search to a target system-specific user base, or you can refer to the environment properties in the mapping. +
+ +
+Note that some attributes like the base nodes for accounts and groups exist both in the Provisioning-side target system and the Connectivity-side connected directory. The Connectivity-side attributes, if specified, are overwritten by the target system attributes when the workflow runs for that specific target system.
+* If the target system type of the cluster is *OpenICF*, every target system contains an additional tab where bind parameters and server address/port and the bundle-specific parameters are stored for the OpenICF server. Like the target system itself, the OpenICF server bind profile requires an additional account object which is referenced here; to exclude it from any synchronization, we recommend placing this account object alongside the target systems in the cluster. If several OpenICF servers belong to the cluster, but the bind password is the same for all of them, one such account object is sufficient; otherwise several must be created. One additional restriction applies to target systems in an OpenICF cluster: while DirX Identity can process the address *localhost*, the OpenICF server does not recognize a "root", so using localhost” results in an error.
+* All the specific attributes in the Workflow Configuration, Connector Configuration, Environment Properties and OpenICF Server Configuration (for OpenICF) tabs are read from the default configuration on the Connectivity side and need only be present on the Provisioning side if the value differs for the target system. If no value is present in the target system, the default is evaluated. For OpenICF, where the server configuration is comprised of several bundle-specific attributes and the necessary bind profile attributes, this means:
+
+{empty}1) If only one bundle is used (which we expect to be the main case), the bundle-specific attributes can be used from the workflow and need not be entered in every target system.
+
+{empty}2) If the same password is used in all OpenICF servers in the cluster, the bind profile can be used from the connected directory and need not be entered in every target system, thus also making the additional bind account redundant.
+
+{empty}3) If only one OpenICF server is used, the bind profile and the server address/port can be used from the connected directory/service and need not be entered in every target system, thus again making the additional bind account redundant.
+
+{empty}4) For all other cases, remember that the values entered on the Connectivity side are used. They must only be entered in the actual target system if they differ.</pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
